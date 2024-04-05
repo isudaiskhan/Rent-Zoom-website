@@ -84,7 +84,7 @@ const ClientsSay = () => {
       whileInView={{x: 0, opacity: 1}}
       transition={{delay:0.2, x:{type:"spring", stiffness:60},opacity:{duration:1},ease:"easeIn",
       duration:1}}  
-     className='text-end'>
+     className='text-end sm:mt-0 mt-16'>
       <button className="ml-4 rounded-full mr-4 shadow-md shadow-gray-500" onClick={goToPrev}>
         <FiChevronLeft className="text-5xl hover:text-[#240a5e]" />
       </button>
@@ -101,7 +101,7 @@ const ClientsSay = () => {
       <Slider ref={sliderRef} {...settings}>
       {Array.from({ length: numberOfElements }).map((_, index) => (
           <div key={index}>  
-          <div className="flex flex-wrap lg:-mx-2 sm:-mx-14 sm:mt-10 mt-24 lg:ps-0 lg:pe-0 sm:ps-10 sm:pe-10">
+          <div className="flex flex-wrap lg:-mx-2 sm:-mx-14 sm:mt-10 mt-8 lg:ps-0 lg:pe-0 sm:ps-10 sm:pe-10">
           <div className=" mx-auto w-11/12 sm:px-4 mb-4">
           <div className="overflow-hidden shadow-lg rounded-md shadow-gray-500 flex">
         
